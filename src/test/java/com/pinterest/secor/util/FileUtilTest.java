@@ -41,6 +41,7 @@ public class FileUtilTest {
         Mockito.when(mS3Config.getCloudService()).thenReturn("S3");
         Mockito.when(mS3Config.getS3Bucket()).thenReturn("some_bucket");
         Mockito.when(mS3Config.getS3Path()).thenReturn("some_s3_parent_dir");
+        Mockito.when(mS3Config.getS3FileSystem()).thenReturn("s3n");
 
         mGSconfig = Mockito.mock(SecorConfig.class);
         Mockito.when(mGSconfig.getCloudService()).thenReturn("GS");
